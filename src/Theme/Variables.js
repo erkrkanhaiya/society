@@ -17,7 +17,8 @@ export const Colors = {
   primary: '#E14032',
   success: '#28a745',
   error: '#dc3545',
-  screenbackground:'#F5F5F5'
+  screenbackground:'#F5F5F5',
+ 
 }
 
 export const NavigationColors = {

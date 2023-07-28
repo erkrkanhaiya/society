@@ -1,6 +1,12 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import styled from 'styled-components'
 const styles = StyleSheet.create({
+  listView: {
+    flexDirection: 'row',
+    paddingLeft: 18,
+    alignItems: 'center',
+    // marginLeft:15
+  },
   text: {
     // fontSize: 16,
     marginLeft: 15,
@@ -9,18 +15,20 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#000000',
   },
-  listView: {
+  profilechild: {
+    display: 'flex',
+    // justifyContent:"center",
     flexDirection: 'row',
-    paddingLeft: 18,
     alignItems: 'center',
-    // marginLeft:15
+    // backgroundColor:"red"
   },
-
-  menuparent: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    marginTop: 30,
+  view1parent: {
+    position: 'relative',
+  },
+  logo: {
+    fontSize: 24,
+    textAlign: 'center',
+    color:'white'
   },
   menu: {
     width: 30,
@@ -28,7 +36,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-
   notification: {
     backgroundColor: '#F79D35',
     borderRadius: 25,
@@ -37,20 +44,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     left: 100,
-    alignSelf:'flex-end',
-    alignContent:'flex-end'
+    alignSelf: 'flex-end',
+    alignContent: 'flex-end',
   },
-
   notificationtext: {
     color: 'white',
     fontWeight: '700',
-    fontSize:12
-  },
-
-  maindetailview: {
-    marginLeft: 10,
-    marginRight: 10,
-    backgroundColor: 'white',
+    fontSize: 12,
   },
   mentorchild: {
     alignItems: 'center',
@@ -61,32 +61,6 @@ const styles = StyleSheet.create({
   view1parent: {
     position: 'relative',
   },
-  qr2: {
-    top: 0,
-    backgroundColor: '#01A449',
-    width: 45,
-    height: 45,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 99999,
-  },
-  shareiconview: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  qr2parent: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'absolute',
-    right: 20,
-  },
-  qrtext: {
-    fontSize: 14,
-    fontWeight: '500',
-    marginTop: 5,
-    paddingBottom: 5,
-    marginRight: 5,
-  },
   Mentorarc2: {
     position: 'absolute',
     right: -15,
@@ -94,19 +68,18 @@ const styles = StyleSheet.create({
   },
   mentorname: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 18,
+    fontSize: 21,
     marginTop: 5,
     color: '#000',
-    fontWeight: '700',
+    fontWeight: '500',
+    color: 'white',
   },
   mentorname2: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 16,
+    fontSize: 14,
 
-    color: '#4D4B4B',
+    color: 'white',
   },
- 
-  
 })
 
 const Mainparent = styled(View)`
@@ -117,7 +90,8 @@ const ProfileCard = styled(View)`
   /* width: 326px; */
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(186, 182, 182, 0.25);
-  border-radius: 9px;
+
+  background-color: #349eb0;
 `
 
 const LisView = styled(TouchableOpacity)`
@@ -131,4 +105,4 @@ const LisView = styled(TouchableOpacity)`
   margin-top: 10px;
 `
 
-export { Mainparent, styles, ProfileCard ,LisView}
+export { Mainparent, styles, ProfileCard, LisView }
