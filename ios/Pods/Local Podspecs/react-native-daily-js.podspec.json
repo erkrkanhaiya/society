@@ -1,0 +1,25 @@
+{
+  "name": "react-native-daily-js",
+  "version": "0.31.0",
+  "summary": "React Native library for making video calls using Daily",
+  "description": "react-native-daily-js",
+  "homepage": "https://github.com/daily-co/react-native-daily-js",
+  "license": "MIT",
+  "authors": {
+    "Paul Kompfner": "paul@daily.co"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/daily-co/react-native-daily-js.git",
+    "tag": "0.31.0"
+  },
+  "source_files": "ios/**/*.{h,c,m,swift}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

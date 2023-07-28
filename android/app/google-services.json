@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1021337303053",
+    "project_id": "supportroom",
+    "storage_bucket": "supportroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021337303053:android:b2723c814cef35e6b27d44",
+        "android_client_info": {
+          "package_name": "com.codingmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021337303053-6ngtoksn8op517f2jnqb5kn04ppsh2fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsG3RhPApQcHlZvMnvrSDxjhntdnkMv1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021337303053-6ngtoksn8op517f2jnqb5kn04ppsh2fv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1021337303053-jofe9k3cbr7bolm5al3hrf7nsqleoht2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Supportroom"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
