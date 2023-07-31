@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "RCTImageComponentView+RNSScreenStackHeaderConfig.h"
 #import "RNSConvert.h"
 #import "RNSEnums.h"
 #import "RNSFullWindowOverlay.h"

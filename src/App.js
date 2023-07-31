@@ -68,12 +68,12 @@ const App = () => {
         {/* <Homescreen /> */}
         <NavigationContainer>
           <Navigator screenOptions={{ headerShown: false }}>
-            {/* <Screen name="Login" component={Login} />    */}
+            <Screen name="Login" component={Login} />   
             {/* <Screen name="newpass" component={Newpass} />    */}
             {/* <Screen name="Forgotpassword" component={Forgotpassword} />      */}
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
-            <Screen name="Profile" component={Profile} />
+            {/* <Screen name="Profile" component={Profile} /> */}
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

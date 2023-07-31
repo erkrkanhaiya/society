@@ -16,6 +16,7 @@
 #import "RNCSafeAreaShadowView.h"
 #import "RNCSafeAreaUtils.h"
 #import "RNCSafeAreaView.h"
+#import "RNCSafeAreaViewEdgeMode.h"
 #import "RNCSafeAreaViewEdges.h"
 #import "RNCSafeAreaViewLocalData.h"
 #import "RNCSafeAreaViewManager.h"
