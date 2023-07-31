@@ -29,7 +29,7 @@ import Setting from './Screen/auth/newsupdate/newsupdate'
 import Newlisting2 from './Screen/auth/newlisting2/newlisting2'
 import Nearbyproperty from './Screen/auth/nearbyproperty/nearbyproperty'
 import Exploreproperty from './Screen/auth/exploreproperty/exploreproperty'
-import Profile from './Screen/auth/profile/Profile'
+
 import Search from './Screen/auth/search/search'
 import advancesearch from './Screen/auth/advancesearch/advancesearch'
 import Searchresult from './Screen/auth/searchresult/searchresult'
@@ -48,6 +48,8 @@ import Galary from './Screen/auth/gallary/gallary'
 import Verification from './Screen/auth/verification/verification'
 import Newpass from './Screen/auth/newpass/newpass'
 import Event from './Screen/auth/event/event'
+import Profile from './Screen/auth/profile/profile'
+import Payment from './Screen/auth/payment/payment'
 
 const App = () => {
   const { Navigator, Screen } = createStackNavigator()
@@ -73,7 +75,8 @@ const App = () => {
             {/* <Screen name="Forgotpassword" component={Forgotpassword} />      */}
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
-            <Screen name="Profile" component={Profile} />
+            {/* <Screen name="profile" component={Profile} /> */}
+            <Screen name="Payment" component={Payment} />
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

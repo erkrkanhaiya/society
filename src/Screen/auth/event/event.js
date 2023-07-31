@@ -52,11 +52,19 @@ export default function Event() {
       <SafeAreaView style={styles.bgcolor}>
         <View style={styles.mainview}>
           <View style={styles.profilechild}>
-            <View style={styles.view1parent}>
+            <View
+              style={{
+                position: 'absolute',
+              }}
+            >
               <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
             </View>
-            <Text style={styles.logo}>Event</Text>
+
+            <View style={styles.logoparent}>
+              <Text style={styles.logo}>Event</Text>
+            </View>
           </View>
+
           <Viewmenu>
             <Swiper autoplay={true} style={styles.wrapper}>
               <View style={styles.slide1}>
@@ -102,19 +110,18 @@ export default function Event() {
                       backgroundColor: 'white',
                       position: 'absolute',
                       padding: 5,
-                     paddingHorizontal:20,
+                      paddingHorizontal: 20,
                       top: 10,
                       left: -25,
-                    
+
                       // overflow: 'hidden',
                       transform: [{ rotate: '-50deg' }],
-                      
                     }}
                   >
                     <Text
                       style={{
                         fontSize: 12,
-                        textAlign:"center",
+                        textAlign: 'center',
                         fontWeight: '600',
                       }}
                     >

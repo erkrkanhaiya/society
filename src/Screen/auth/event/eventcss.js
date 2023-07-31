@@ -94,6 +94,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 5,
   },
+  profilechild: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    position: 'relative',
+    height: 30,
+  },
+  logoparent: {
+    position: 'absolute',
+    top: 0,
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
 })
 const Viewmenu = styled(View)`
   margin-top: 10px;

@@ -14,13 +14,13 @@ export const SvgIcon = ({ size = '25', name, width, height, onpress, color, padd
   if (onpress) {
     return (
       <TouchableOpacity onPress={onpress}>
-        <Icon width={width ? width : size} height={height ? height : size} color={color ? color : color} 
+        <Icon width={width ? width : size} height={height ? height : size} color={color ? color :null} 
         paddingTop={paddingTop} />
       </TouchableOpacity>
     )
   }
 
-  return <Icon width={width ? width : size} height={height ? height : size} color={color ? color : color } paddingTop={paddingTop}/>
+  return <Icon width={width ? width : size} height={height ? height : size} color={color ? color : null } paddingTop={paddingTop}/>
 }
 
 export const PngIcon = {
