@@ -16,20 +16,31 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   profilechild: {
-    display: 'flex',
-    // justifyContent:"center",
     flexDirection: 'row',
     alignItems: 'center',
-    // backgroundColor:"red"
-  },
-  view1parent: {
     position: 'relative',
+    height: 30,
+  },
+  logoparent: {
+    position: 'absolute',
+    top: 0,
+    width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   logo: {
     fontSize: 24,
     textAlign: 'center',
-    color:'white'
+    color: 'white',
   },
+
+  view1parent: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 15,
+  },
+  
   menu: {
     width: 30,
     height: 30,
@@ -52,19 +63,31 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 12,
   },
-  mentorchild: {
-    alignItems: 'center',
-    paddingTop: 8,
-    marginTop: 15,
-    position: 'relative',
+  infotextheader: {
+    fontSize: 17,
+    fontWeight: '700',
   },
-  view1parent: {
-    position: 'relative',
+  infotext1: {
+    fontSize: 17,
+    fontWeight: '500',
+    color:"#575757"
+  },
+  infotext2: {
+    fontSize: 16,
+    color:"#757575"
+  },
+  infomailview: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  
   },
   Mentorarc2: {
     position: 'absolute',
     right: -15,
     top: 28,
+  },
+  margin:{
+marginTop:15
   },
   mentorname: {
     fontFamily: 'Poppins-Regular',
@@ -90,7 +113,7 @@ const ProfileCard = styled(View)`
   /* width: 326px; */
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(186, 182, 182, 0.25);
-
+  flex: 2;
   background-color: #349eb0;
 `
 

@@ -102,6 +102,12 @@ import plus from '../property/staticimg/svg/plus.svg'
 import occasion from '../property/staticimg/svg/occasion.svg'
 import date from '../property/staticimg/svg/date.svg'
 import located from '../property/staticimg/svg/located.svg'
+import bulb from '../property/staticimg/svg/bulb.svg'
+import drop from '../property/staticimg/svg/drop.svg'
+import key from '../property/staticimg/svg/key.svg'
+import right from '../property/staticimg/svg/right.svg'
+import tax from '../property/staticimg/svg/tax.svg'
+import trueicon from '../property/staticimg/svg/true.svg'
 
 export const Icons = {
   intro1: Intro1,
@@ -204,5 +210,11 @@ export const Icons = {
   Plus:plus,
   Located:located,
   Date:date,
-  Occasion:occasion
+  Occasion:occasion,
+  bulb:bulb,
+  key:key,
+  drop:drop,
+  right:right,
+  tax:tax,
+  true:trueicon
 }

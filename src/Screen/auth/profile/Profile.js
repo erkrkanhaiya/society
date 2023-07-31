@@ -4,7 +4,8 @@ import { Colors } from '@/Theme/Variables'
 import { ProfileCard, styles, LisView } from './profilecss'
 import { SvgIcon, profileimg } from '@/Assets/Images/property'
 import _Button from '@/Components/common/_button/_button'
-import FullScreenChz from 'react-native-fullscreen-chz';
+import FullScreenChz from 'react-native-fullscreen-chz'
+import { Styles } from '@/Styles/Styled-Components'
 
 export default function Profile() {
   const listArr = [
@@ -55,37 +56,70 @@ export default function Profile() {
   }
 
   return (
-    <View style={{ backgroundColor: Colors?.white, flex: 1 }}>
-      <View >
-        <ProfileCard>
-          <View style={styles.mentorchild}>
-          <View style={styles.profilechild}>
-            <View style={styles.view1parent}>
-              <SvgIcon name={'Back2'} width={'14px'} height={'14px'}  />
-            </View>
-            <Text style={styles.logo}>Event</Text>
+    <View style={{ backgroundColor: Colors?.white, flex: 1, }}>
+      <ProfileCard>
+        <View style={styles.profilechild}>
+          <View
+            style={{
+              position: 'absolute',
+            }}
+          >
+            <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
           </View>
-            <View  style={styles.view1parent}>
-              <Image
-                source={profileimg?.user}
-                style={{ height: 95, width: 95 }}
-              />
-              <View style={styles.Mentorarc2}>
-                <SvgIcon name={'Mentorarc'} width={'31px'} height={'27px'} />
-              </View>
-            </View>
 
-            <Text style={styles.mentorname}>Radha krishna</Text>
-            <Text style={styles.mentorname2}>Family Head</Text>
+          <View style={styles.logoparent}>
+            <Text style={styles.logo}>My Profile</Text>
           </View>
-        </ProfileCard>
+        </View>
 
-        {/* <FlatList
-          data={listArr}
-          renderItem={_renderItem}
-          keyExtractor={(item, index) => item.key}
-        /> */}
+        <View style={styles.view1parent}>
+          <View>
+            <Image
+              source={profileimg?.user}
+              style={{ height: 95, width: 95 }}
+            />
+            <View style={styles.Mentorarc2}>
+              <SvgIcon name={'Mentorarc'} width={'31px'} height={'27px'} />
+            </View>
+          </View>
+          <Text style={styles.mentorname}>Radha krishna</Text>
+          <Text style={styles.mentorname2}>Family Head</Text>
+        </View>
+      </ProfileCard>
+      <View>
+        <Text style={styles.infotextheader}>PERSONAL INFORMATION</Text>
+        <View style={styles.infomailview}>
+          <SvgIcon name={'Mentorarc'} width={'24px'} height={'24px'} />
+
+          <View
+            style={{
+              marginLeft: 10,
+            }}
+          >
+            <Text style={styles.infotext1}>Email id</Text>
+            <Text style={styles.infotext2}>username@gmail.com</Text>
+          </View>
+        </View>
+
+        <View style={[styles.infomailview, styles.margin]}>
+          <SvgIcon name={'Mentorarc'} width={'24px'} height={'24px'} />
+
+          <View
+            style={{
+              marginLeft: 10,
+            }}
+          >
+            <Text style={styles.infotext1}>Email id</Text>
+            <Text style={styles.infotext2}>username@gmail.com</Text>
+          </View>
+        </View>
       </View>
+
+      <FlatList
+        data={listArr}
+        renderItem={_renderItem}
+        keyExtractor={(item, index) => item.key}
+      />
     </View>
   )
 }
