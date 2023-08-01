@@ -108,6 +108,13 @@ import key from '../property/staticimg/svg/key.svg'
 import right from '../property/staticimg/svg/right.svg'
 import tax from '../property/staticimg/svg/tax.svg'
 import trueicon from '../property/staticimg/svg/true.svg'
+import evdetails from '../property/staticimg/svg/evdetails.svg'
+import event1 from '../property/staticimg/svg/event1.svg'
+import event2 from '../property/staticimg/svg/event2.svg'
+import event3 from '../property/staticimg/svg/event3.svg'
+import event4 from '../property/staticimg/svg/event4.svg'
+import event5 from '../property/staticimg/svg/event5.svg'
+import event6 from '../property/staticimg/svg/event6.svg'
 
 export const Icons = {
   intro1: Intro1,
@@ -216,5 +223,12 @@ export const Icons = {
   drop:drop,
   right:right,
   tax:tax,
-  true:trueicon
+  true:trueicon,
+  evdetails:evdetails,
+  Event1:event1,
+  Event2:event2,
+  Event3:event3,
+  Event4:event4,
+  Event5:event5,
+  Event6:event6,
 }

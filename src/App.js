@@ -50,6 +50,7 @@ import Newpass from './Screen/auth/newpass/newpass'
 import Event from './Screen/auth/event/event'
 import Profile from './Screen/auth/profile/profile'
 import Payment from './Screen/auth/payment/payment'
+import Eventdetails from './Screen/auth/eventdetails/eventdetails'
 
 const App = () => {
   const { Navigator, Screen } = createStackNavigator()
@@ -76,7 +77,8 @@ const App = () => {
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
             {/* <Screen name="profile" component={Profile} /> */}
-            <Screen name="Payment" component={Payment} />
+            {/* <Screen name="Payment" component={Payment} /> */}
+            <Screen name="Eventdetails" component={Eventdetails} />
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

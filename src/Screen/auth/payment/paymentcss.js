@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
 
   notification: {
-    backgroundColor: '#45A5B6',
+    // backgroundColor: '#45A5B6',
     borderRadius: 25,
     width: 22,
     height: 22,
