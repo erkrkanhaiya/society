@@ -94,9 +94,7 @@ const App = () => {
         <Screen name="HomeDrawer" component={HomeDrawer} />
         <Screen name="Event" component={Event} />
         <Screen name="Eventdetails" component={Eventdetails} />
-
       </Navigator>
-
     </NavigationContainer>
   )
 
