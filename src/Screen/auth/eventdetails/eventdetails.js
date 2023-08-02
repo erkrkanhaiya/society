@@ -17,7 +17,7 @@ import { useNavigation, useTheme } from '@react-navigation/native'
 
 const image = ['Event1', 'Event2', 'Event3', 'Event4', 'Event5', 'Event6']
 
-export default function Signin() {
+export default function Eventdetails() {
   const [mail, setMail] = useState('')
   const [password, setPassword] = useState('')
   const [mailErr, setmailErr] = useState(false)
@@ -28,6 +28,8 @@ export default function Signin() {
       setmailErr(true)
     }
   }
+
+
   const nav = useNavigation()
   return (
     <Mainparent>

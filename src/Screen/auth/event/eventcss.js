@@ -3,13 +3,17 @@ import styled from 'styled-components'
 
 // import styled from 'styled-components'
 const styles = StyleSheet.create({
-  profilechild: {
-    display: 'flex',
-    // justifyContent:"center",
-    flexDirection: 'row',
-    alignItems: 'center',
-    // backgroundColor:"red"
+  mainview: {
+    paddingHorizontal: 15,
+    backgroundColor: 'white',
   },
+  // profilechild: {
+  //   display: 'flex',
+  //   // justifyContent:"center",
+  //   flexDirection: 'row',
+  //   alignItems: 'center',
+  //   // backgroundColor:"red"
+  // },
   view1parent: {
     position: 'relative',
   },
@@ -21,13 +25,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 45,
   },
-  bgcolor: {
-    backgroundColor: 'white',
-  },
-  mainview: {
-    marginLeft: 15,
-    marginRight: 15,
-  },
+
   icon3: {
     backgroundColor: 'white',
     width: 40,
@@ -94,21 +92,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginVertical: 5,
   },
-  profilechild: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    position: 'relative',
-    height: 30,
-  },
-  logoparent: {
-    position: 'absolute',
-    top: 0,
-    width: '100%',
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  
 })
 const Viewmenu = styled(View)`
   margin-top: 10px;

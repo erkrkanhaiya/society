@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
     marginTop: 2,
+    fontFamily: 'Poppins',
   },
 
   notification: {
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     marginTop: 25,
+    fontFamily: 'Poppins',
   },
   button: {
     marginTop: 50,
@@ -70,6 +72,7 @@ const styles = StyleSheet.create({
   selectall: {
     fontSize: 18,
     fontWeight: '500',
+    fontFamily: 'Poppins',
   },
 })
 

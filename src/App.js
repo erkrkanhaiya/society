@@ -41,7 +41,7 @@ import Newlistingfill from './Screen/auth/newlistingfill/newlistingfill'
 import Tutorial from './Screen/auth/tutorial/tutorial'
 import Notification from './Screen/auth/notification/notification'
 import Changepass from './Screen/auth/changepass/changepass'
-import Familyprofile from './Screen/auth/familyprofile/familyprofile'
+
 import Newsupdate from './Screen/auth/newsupdate/newsupdate'
 import Calendor from './Screen/auth/calendor/calendor'
 import Galary from './Screen/auth/gallary/gallary'
@@ -49,8 +49,11 @@ import Verification from './Screen/auth/verification/verification'
 import Newpass from './Screen/auth/newpass/newpass'
 import Event from './Screen/auth/event/event'
 import Profile from './Screen/auth/profile/profile'
-import Payment from './Screen/auth/payment/payment'
+import Payment from './Screen/auth/billpayment/billpayment'
 import Eventdetails from './Screen/auth/eventdetails/eventdetails'
+import Billpayment from './Screen/auth/billpayment/billpayment'
+import Payments from './Screen/auth/payments/payments'
+import Suggestion from './Screen/auth/suggestion/suggestion'
 
 const App = () => {
   const { Navigator, Screen } = createStackNavigator()
@@ -77,8 +80,10 @@ const App = () => {
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
             {/* <Screen name="profile" component={Profile} /> */}
-            {/* <Screen name="Payment" component={Payment} /> */}
-            <Screen name="Eventdetails" component={Eventdetails} />
+            {/* <Screen name="Billpayment" component={Billpayment} /> */}
+            {/* <Screen name="Eventdetails" component={Eventdetails} /> */}
+            {/* <Screen name="Payments" component={Payments} /> */}
+            <Screen name="Suggestion" component={Suggestion} />
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>
