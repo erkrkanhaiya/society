@@ -22,31 +22,39 @@ import { ScrollView } from 'react-native-gesture-handler'
 import ViewButton from '@/Components/common/viewall/viewall'
 import Maincard from '@/Components/common/maincard/maincard'
 import styled from 'styled-components'
+import { useNavigation, useTheme } from '@react-navigation/native'
+
+
+
+
+
 const society = [
-  { image: newproject.member, text: 'All Members' },
-  { image: newproject.event, text: 'Events' },
-  { image: newproject.car, text: 'All Vehicle' },
-  { image: newproject.noticebord, text: 'Notice Board' },
-  { image: newproject.bills, text: 'Bills' },
+  { image: newproject.member, text: 'All Members', navTo: '' },
+  { image: newproject.event, text: 'Events', navTo: 'Event' },
+  { image: newproject.car, text: 'All Vehicle', navTo: '' },
+  { image: newproject.noticebord, text: 'Notice Board', navTo: '' },
+  { image: newproject.bills, text: 'Bills', navTo: '' },
 ]
 const payments = [
-  { image: newproject.bill, text: 'Bill Payment' },
-  { image: newproject.rent, text: 'Rent Pay' },
-  { image: newproject.siciety, text: 'Society Charge' },
+  { image: newproject.bill, text: 'Bill Payment', navTo: '' },
+  { image: newproject.rent, text: 'Rent Pay', navTo: '' },
+  { image: newproject.siciety, text: 'Society Charge', navTo: '' },
 ]
 
 const Other_activity = [
-  { image: newproject.rule, text: 'Rules' },
-  { image: newproject.loudspeaker, text: 'Announcement' },
-  { image: newproject.suggestion, text: 'suggestion' },
+  { image: newproject.rule, text: 'Rules', navTo: '' },
+  { image: newproject.loudspeaker, text: 'Announcement', navTo: '' },
+  { image: newproject.suggestion, text: 'suggestion', navTo: '' },
 ]
 
 export default function Homescreen() {
+const nav = useNavigation()
+
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <SafeAreaView style={styles.bgcolor}>
         <View style={styles.mainview}>
-          <View style={styles.profile}>
+          {/* <View style={styles.profile}>
             <View style={styles.profilechild}>
               <View style={styles.view1parent}>
                 <SvgIcon name={'burger'} width={'25px'} height={'25px'} />
@@ -63,7 +71,7 @@ export default function Homescreen() {
                 <SvgIcon name={'Client'} width={'40px'} height={'40px'} />
               </View>
             </View>
-          </View>
+          </View> */}
 
           <Viewmenu>
             <Swiper autoplay={true} style={styles.wrapper}>
@@ -91,12 +99,13 @@ export default function Homescreen() {
               {society.map((i, index) => {
                 return (
                   <View key={index} style={styles.containermain}>
-                    <View style={styles.containerchild}>
+                    <TouchableOpacity onPress={()=>{nav.navigate(i?.navTo)}}
+                    style={styles.containerchild}>
                       <Image
                         source={i.image}
                         style={{ height: 35, width: 35 }}
                       />
-                    </View>
+                    </TouchableOpacity>
                     <Text style={styles.containertext}>{i.text}</Text>
                   </View>
                 )

@@ -53,7 +53,9 @@ export default function Signin() {
         
           <Text style={styles.sidebutton2}>Forgot Password?</Text>
           <View style={styles.button}>
-            <Gbutton texttitle={'Login'} />
+            <Gbutton texttitle={'Login'} onClick={()=>{
+               nav.navigate('HomeDrawer')
+            }} />
           </View>
         </SafeAreaView>
       </View>

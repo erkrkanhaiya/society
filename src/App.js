@@ -51,8 +51,51 @@ import Event from './Screen/auth/event/event'
 // import Profile from './Screen/auth/profile/profile'
 import Payment from './Screen/auth/payment/payment'
 
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { DrawerContent } from './Screen/DrawerScreen/Sidemenu'
+
+
+const { Navigator, Screen } = createStackNavigator()
+
+const Drawer = createDrawerNavigator();
+
+
+
+ s
+
+
+const HomeDrawer = () => {
+
+  return (
+    <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
+      <Drawer.Screen name="HomeDrawer" component={Homescreen} />
+      {/* <Drawer.Screen name="StackScreen" component={StackScreen} /> */}
+      {/* <Drawer.Screen name="Newpass" component={Newpass} /> */}
+      {/* <Drawer.Screen name="Forgotpassword" component={Forgotpassword} /> */}
+    </Drawer.Navigator>
+  )
+}
+
+
+
+
 const App = () => {
-  const { Navigator, Screen } = createStackNavigator()
+
+
+  // return (
+  //   <NavigationContainer>
+  //     <Navigator screenOptions={{ headerShown:false  }}>
+  //       <Screen name="Login" component={Login} />
+  //       <Screen name="newpass" component={Newpass} />
+  //       <Screen name="Forgotpassword" component={Forgotpassword} />
+  //       <Screen name="HomeDrawer" component={HomeDrawer} /> 
+
+  //       <Screen name="Event" component={Event} /> 
+
+  //     </Navigator>
+
+  //   </NavigationContainer>
+  // )
 
   return (
     <>
