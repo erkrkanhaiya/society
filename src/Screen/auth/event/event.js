@@ -19,9 +19,11 @@ import {
   newlisting,
 } from '@/Assets/Images/property'
 import { ScrollView } from 'react-native-gesture-handler'
+import { useNavigation, useTheme } from '@react-navigation/native'
 import ViewButton from '@/Components/common/viewall/viewall'
 import Maincard from '@/Components/common/maincard/maincard'
 import styled from 'styled-components'
+
 const card_data = [
   {
     image: newproject.event1,
@@ -46,24 +48,48 @@ const card_data = [
   },
 ]
 
+
+
 export default function Event() {
+  const nav = useNavigation()
+
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <SafeAreaView style={styles.bgcolor}>
+
+        <View style={{ flex: 1, backgroundColor: 'red', flexDirection: 'row', marginHorizontal: 15 }}>
+          <TouchableOpacity
+            onPress={() => { nav.goBack() }}
+            style={{ flex: 1 }}>
+            <SvgIcon name={'Back2'} width={'18px'} height={'18px'} />
+          </TouchableOpacity>
+
+          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>ds</Text>
+          </View>
+
+          <View style={{ flex: 1, justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+            {/* <Text>ds</Text> */}
+          </View>
+
+        </View>
+
         <View style={styles.mainview}>
-          <View style={styles.profilechild}>
-            <View
+
+          {/* <View style={[styles.profilechild]}>
+            <TouchableOpacity
+            onPress={()=>{alert('ji')}}
               style={{
                 position: 'absolute',
               }}
             >
               <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
-            </View>
+            </TouchableOpacity>
 
             <View style={styles.logoparent}>
               <Text style={styles.logo}>Event</Text>
             </View>
-          </View>
+          </View> */}
 
           <Viewmenu>
             <Swiper autoplay={true} style={styles.wrapper}>
@@ -102,7 +128,9 @@ export default function Event() {
 
           {card_data.map((i, index) => {
             return (
-              <View key={index} style={styles.cardview}>
+              <TouchableOpacity
+              onPress={() => { nav.navigate('Eventdetails') }}
+              key={index} style={styles.cardview}>
                 <View>
                   <Image source={i.image} style={{ height: 127, width: 140 }} />
                   <View
@@ -145,7 +173,7 @@ export default function Event() {
                     <Text style={styles.icontext}>{i.occasion}</Text>
                   </View>
                 </View>
-              </View>
+              </TouchableOpacity>
             )
           })}
         </View>
