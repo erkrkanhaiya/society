@@ -14,10 +14,11 @@ import { SvgIcon } from '@/Assets/Images/property'
 import _Input from '@/Components/common/input/reusableinput'
 import PasswordInput from '@/Components/common/input/password'
 import { useNavigation, useTheme } from '@react-navigation/native'
+import Navigantion from '@/Components/common/navigation/navigantion'
 
 const image = ['Event1', 'Event2', 'Event3', 'Event4', 'Event5', 'Event6']
 
-export default function Signin() {
+export default function Eventdetails() {
   const [mail, setMail] = useState('')
   const [password, setPassword] = useState('')
   const [mailErr, setmailErr] = useState(false)
@@ -28,20 +29,24 @@ export default function Signin() {
       setmailErr(true)
     }
   }
+
+
   const nav = useNavigation()
   return (
     <Mainparent>
+      <Navigantion header={'Event'}  {...nav}/>
+
       <View style={styles.view1child}>
         <SvgIcon name={'evdetails'} width={'100%'} height={'100%'} />
       </View>
 
       <SafeAreaView style={styles.view2}>
-        <ScrollView
+        {/* <ScrollView
           showsVerticalScrollIndicator={false}
           style={{
             padding: 15,
           }}
-        >
+        > */}
           <Text style={styles.headertext}>New Year Celebration</Text>
 
           <View style={styles.view3parent}>
@@ -90,7 +95,7 @@ export default function Signin() {
               )
             })}
           </View>
-        </ScrollView>
+        {/* </ScrollView> */}
       </SafeAreaView>
     </Mainparent>
   )

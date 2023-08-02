@@ -24,10 +24,6 @@ import Maincard from '@/Components/common/maincard/maincard'
 import styled from 'styled-components'
 import { useNavigation, useTheme } from '@react-navigation/native'
 
-
-
-
-
 const society = [
   { image: newproject.member, text: 'All Members', navTo: '' },
   { image: newproject.event, text: 'Events', navTo: 'Event' },
@@ -36,19 +32,19 @@ const society = [
   { image: newproject.bills, text: 'Bills', navTo: '' },
 ]
 const payments = [
-  { image: newproject.bill, text: 'Bill Payment', navTo: '' },
-  { image: newproject.rent, text: 'Rent Pay', navTo: '' },
+  { image: newproject.bill, text: 'Bill Payment', navTo: 'Billpayment' },
+  { image: newproject.rent, text: 'Rent Pay', navTo: 'Payments' },
   { image: newproject.siciety, text: 'Society Charge', navTo: '' },
 ]
 
 const Other_activity = [
   { image: newproject.rule, text: 'Rules', navTo: '' },
   { image: newproject.loudspeaker, text: 'Announcement', navTo: '' },
-  { image: newproject.suggestion, text: 'suggestion', navTo: '' },
+  { image: newproject.suggestion, text: 'suggestion', navTo: 'Suggestion' },
 ]
 
 export default function Homescreen() {
-const nav = useNavigation()
+  const nav = useNavigation()
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -99,8 +95,12 @@ const nav = useNavigation()
               {society.map((i, index) => {
                 return (
                   <View key={index} style={styles.containermain}>
-                    <TouchableOpacity onPress={()=>{nav.navigate(i?.navTo)}}
-                    style={styles.containerchild}>
+                    <TouchableOpacity
+                      onPress={() => {
+                        nav.navigate(i?.navTo)
+                      }}
+                      style={styles.containerchild}
+                    >
                       <Image
                         source={i.image}
                         style={{ height: 35, width: 35 }}
@@ -123,7 +123,8 @@ const nav = useNavigation()
             <View style={styles.container}>
               {payments.map((i, index) => {
                 return (
-                  <View key={index} style={styles.containermain}>
+                  <TouchableOpacity onPress={()=>{nav.navigate(i?.navTo)}}
+                  key={index} style={styles.containermain}>
                     <View style={styles.containerchild}>
                       <Image
                         source={i.image}
@@ -131,7 +132,7 @@ const nav = useNavigation()
                       />
                     </View>
                     <Text style={styles.containertext}>{i.text}</Text>
-                  </View>
+                  </TouchableOpacity>
                 )
               })}
             </View>
@@ -141,7 +142,13 @@ const nav = useNavigation()
             <View style={styles.container}>
               {Other_activity.map((i, index) => {
                 return (
-                  <View key={index} style={styles.containermain}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      nav.navigate(i?.navTo)
+                    }}
+                    key={index}
+                    style={styles.containermain}
+                  >
                     <View style={styles.containerchild}>
                       <Image
                         source={i.image}
@@ -149,14 +156,13 @@ const nav = useNavigation()
                       />
                     </View>
                     <Text style={styles.containertext}>{i.text}</Text>
-                  </View>
+                  </TouchableOpacity>
                 )
               })}
             </View>
           </View>
         </View>
       </SafeAreaView>
-      <Text>build version 07.26.00</Text>
     </ScrollView>
   )
 }

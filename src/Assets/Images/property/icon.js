@@ -115,6 +115,12 @@ import event3 from '../property/staticimg/svg/event3.svg'
 import event4 from '../property/staticimg/svg/event4.svg'
 import event5 from '../property/staticimg/svg/event5.svg'
 import event6 from '../property/staticimg/svg/event6.svg'
+import threedot from '../property/staticimg/svg/threedot.svg'
+import bell from '../property/staticimg/svg/bell.svg'
+import eventtt from '../property/staticimg/svg/eventtt.svg'
+import payment from '../property/staticimg/svg/event.svg'
+import birth2 from '../property/staticimg/svg/birth2.svg'
+import suggestionicon from '../property/staticimg/svg/suggestionicon.svg'
 
 export const Icons = {
   intro1: Intro1,
@@ -231,4 +237,11 @@ export const Icons = {
   Event4:event4,
   Event5:event5,
   Event6:event6,
+  Threedot:threedot,
+  Bell:bell,
+  Birth:birth2,
+  Event:eventtt,
+  Payment:payment,
+  Suggestionicon:suggestionicon
+  
 }

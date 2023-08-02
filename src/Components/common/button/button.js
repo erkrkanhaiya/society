@@ -34,4 +34,5 @@ const Textstyle = styled(Text)`
   font-size: 22px;
   font-weight: 500;
   opacity: 1;
+  font-Family: 'Poppins';
 `

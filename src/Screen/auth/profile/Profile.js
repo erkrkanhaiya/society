@@ -58,19 +58,7 @@ export default function Profile() {
   return (
     <View style={{ backgroundColor: Colors?.white, flex: 1, }}>
       <ProfileCard>
-        <View style={styles.profilechild}>
-          <View
-            style={{
-              position: 'absolute',
-            }}
-          >
-            <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
-          </View>
-
-          <View style={styles.logoparent}>
-            <Text style={styles.logo}>My Profile</Text>
-          </View>
-        </View>
+        
 
         <View style={styles.view1parent}>
           <View>

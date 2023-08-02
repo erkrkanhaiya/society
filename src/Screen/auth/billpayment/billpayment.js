@@ -1,17 +1,22 @@
 import { View, Text, Image, FlatList } from 'react-native'
 import React from 'react'
 import { Colors } from '@/Theme/Variables'
-import { styles, LisView } from './paymentcss'
+import { styles, LisView } from './billpaymentcss'
 import { SvgIcon, profileimg } from '@/Assets/Images/property'
 import _Button from '@/Components/common/_button/_button'
 import FullScreenChz from 'react-native-fullscreen-chz'
 import { Styles } from '@/Styles/Styled-Components'
 import Gbutton from '@/Components/common/button/button'
 import { useState } from 'react'
+import Navigantion from '@/Components/common/navigation/navigantion'
+import { useNavigation, useTheme } from '@react-navigation/native'
 
-export default function Payment() {
+
+export default function Billpayment() {
   const [color, setColor] = useState(true) // default value of bg-color
   const [icon, setIcon] = useState(false)
+  const nav = useNavigation()
+
 
   function Clicked() {
     setColor(!color)
@@ -87,19 +92,8 @@ export default function Payment() {
       style={{ backgroundColor: Colors?.white, flex: 1, paddingHorizontal: 15 }}
     >
       <View>
-        <View style={styles.profilechild}>
-          <View
-            style={{
-              position: 'absolute',
-            }}
-          >
-            <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
-          </View>
+      <Navigantion header={'Bill Payment'} {...nav}/>
 
-          <View style={styles.logoparent}>
-            <Text style={styles.logo}>Bill Payment</Text>
-          </View>
-        </View>
         <Text style={styles.header}>All Payable bill</Text>
         <View style={[styles?.listView, styles.margin]}>
           <Text style={styles.selectall}>Select All</Text>
