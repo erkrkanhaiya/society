@@ -50,6 +50,7 @@ import Newpass from './Screen/auth/newpass/newpass'
 import Event from './Screen/auth/event/event'
 // import Profile from './Screen/auth/profile/profile'
 import Payment from './Screen/auth/payment/payment'
+import Eventdetails from './Screen/auth/eventdetails/eventdetails'
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { DrawerContent } from './Screen/DrawerScreen/Sidemenu'
@@ -120,7 +121,8 @@ const App = () => {
             {/* <Screen name="Event" component={Event} /> */}
             {/* <Screen name="Profile" component={Profile} /> */}
             {/* <Screen name="profile" component={Profile} /> */}
-            <Screen name="Payment" component={Payment} />
+            {/* <Screen name="Payment" component={Payment} /> */}
+            <Screen name="Eventdetails" component={Eventdetails} />
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

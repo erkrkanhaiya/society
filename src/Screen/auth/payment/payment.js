@@ -7,8 +7,19 @@ import _Button from '@/Components/common/_button/_button'
 import FullScreenChz from 'react-native-fullscreen-chz'
 import { Styles } from '@/Styles/Styled-Components'
 import Gbutton from '@/Components/common/button/button'
+import { useState } from 'react'
 
 export default function Payment() {
+  const [color, setColor] = useState(true) // default value of bg-color
+  const [icon, setIcon] = useState(false)
+
+  function Clicked() {
+    setColor(!color)
+  }
+
+  function Icon() {
+    setIcon(!icon)
+  }
   const listArr = [
     {
       icon: 'bulb',
@@ -36,7 +47,12 @@ export default function Payment() {
 
   function _renderItem({ item, index }) {
     return (
-      <LisView key={item?.icon} onPress={() => alert('k')}>
+      <LisView
+        key={item?.icon}
+        onPress={() => {
+          Clicked(), Icon()
+        }}
+      >
         <View style={styles?.listView}>
           <View style={styles?.listViewchild}>
             <SvgIcon name={item?.icon} size={'30'} />
@@ -53,8 +69,13 @@ export default function Payment() {
               <Text style={styles.pricetext}>Rs. {item?.price}/-</Text>
             </View>
           </View>
-          <View style={styles.notification}>
-            <SvgIcon name={'true'} width={12} height={10} />
+          <View
+            style={[
+              styles.notification,
+              { backgroundColor: color ? '#EEEEEE' : '#45A5B6' },
+            ]}
+          >
+            {icon && <SvgIcon name={'true'} width={12} height={10} />}
           </View>
         </View>
       </LisView>
