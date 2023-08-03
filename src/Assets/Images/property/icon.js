@@ -121,6 +121,7 @@ import eventtt from '../property/staticimg/svg/eventtt.svg'
 import payment from '../property/staticimg/svg/event.svg'
 import birth2 from '../property/staticimg/svg/birth2.svg'
 import suggestionicon from '../property/staticimg/svg/suggestionicon.svg'
+import dummyimg from '../property/staticimg/svg/dummyimg.svg'
 
 export const Icons = {
   intro1: Intro1,
@@ -242,6 +243,7 @@ export const Icons = {
   Birth:birth2,
   Event:eventtt,
   Payment:payment,
-  Suggestionicon:suggestionicon
+  Suggestionicon:suggestionicon,
+  Dummyimg:dummyimg,
   
 }

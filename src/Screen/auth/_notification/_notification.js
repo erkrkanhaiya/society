@@ -1,7 +1,7 @@
 import { View, Text, Image, FlatList } from 'react-native'
 import React from 'react'
 import { Colors } from '@/Theme/Variables'
-import { styles, LisView } from './paymentscss'
+import { styles, LisView } from './_notificationcss'
 import { SvgIcon, profileimg } from '@/Assets/Images/property'
 import _Button from '@/Components/common/_button/_button'
 import FullScreenChz from 'react-native-fullscreen-chz'
@@ -10,7 +10,7 @@ import Gbutton from '@/Components/common/button/button'
 import { useState } from 'react'
 import Navigantion from '@/Components/common/navigation/navigantion'
 
-export default function Payments() {
+export default function _Notification() {
   const [color, setColor] = useState(true) // default value of bg-color
   const [icon, setIcon] = useState(false)
 

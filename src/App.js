@@ -52,8 +52,10 @@ import Profile from './Screen/auth/profile/profile'
 import Payment from './Screen/auth/billpayment/billpayment'
 import Eventdetails from './Screen/auth/eventdetails/eventdetails'
 import Billpayment from './Screen/auth/billpayment/billpayment'
-import Payments from './Screen/auth/payments/payments'
+import Payments from './Screen/auth/_notification/_notification'
 import Suggestion from './Screen/auth/suggestion/suggestion'
+import Createsuggestion from './Screen/auth/createsuggestion/createsuggestion'
+import _Notification from './Screen/auth/_notification/_notification'
 
 const App = () => {
   const { Navigator, Screen } = createStackNavigator()
@@ -79,11 +81,12 @@ const App = () => {
             {/* <Screen name="Forgotpassword" component={Forgotpassword} />      */}
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
-            {/* <Screen name="profile" component={Profile} /> */}
+            <Screen name="profile" component={Profile} />
             {/* <Screen name="Billpayment" component={Billpayment} /> */}
             {/* <Screen name="Eventdetails" component={Eventdetails} /> */}
-            {/* <Screen name="Payments" component={Payments} /> */}
-            <Screen name="Suggestion" component={Suggestion} />
+            {/* <Screen name="_Notification" component={_Notification} /> */}
+            {/* <Screen name="Suggestion" component={Suggestion} /> */}
+            {/* <Screen name="Createsuggestion" component={Createsuggestion} /> */}
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

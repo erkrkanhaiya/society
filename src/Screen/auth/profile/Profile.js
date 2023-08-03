@@ -6,6 +6,7 @@ import { SvgIcon, profileimg } from '@/Assets/Images/property'
 import _Button from '@/Components/common/_button/_button'
 import FullScreenChz from 'react-native-fullscreen-chz'
 import { Styles } from '@/Styles/Styled-Components'
+import Navigantion from '@/Components/common/navigation/navigantion'
 
 export default function Profile() {
   const listArr = [
@@ -56,21 +57,10 @@ export default function Profile() {
   }
 
   return (
-    <View style={{ backgroundColor: Colors?.white, flex: 1, }}>
-      <ProfileCard>
-        <View style={styles.profilechild}>
-          <View
-            style={{
-              position: 'absolute',
-            }}
-          >
-            <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
-          </View>
-
-          <View style={styles.logoparent}>
-            <Text style={styles.logo}>My Profile</Text>
-          </View>
-        </View>
+    <View style={{ backgroundColor: Colors?.white, flex: 1, paddingHorizontal:15 }}>
+      
+  
+      <Navigantion header={'My Profile'}/>
 
         <View style={styles.view1parent}>
           <View>
@@ -85,7 +75,7 @@ export default function Profile() {
           <Text style={styles.mentorname}>Radha krishna</Text>
           <Text style={styles.mentorname2}>Family Head</Text>
         </View>
-      </ProfileCard>
+   
       <View>
         <Text style={styles.infotextheader}>PERSONAL INFORMATION</Text>
         <View style={styles.infomailview}>
