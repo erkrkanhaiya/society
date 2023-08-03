@@ -14,7 +14,7 @@ import RNPickerSelect from 'react-native-picker-select'
 import { SvgIcon } from '@/Assets/Images/property'
 import { color } from 'react-native-reanimated'
 // import Slider from '@react-native-community/slider'
-import RangeSlider from '@jesster2k10/react-native-range-slider'
+// import RangeSlider from '@jesster2k10/react-native-range-slider'
 
 export default function Advancesearch() {
   const [sliderValue, setSliderValue] = useState(0)
@@ -103,7 +103,7 @@ export default function Advancesearch() {
           </View>
 
           
-          <RangeSlider
+          {/* <RangeSlider
             type="range"
             selectionColor={'#01A449'}
             min={100000}
@@ -123,7 +123,7 @@ export default function Advancesearch() {
               setSliderValue(data)
               setSliderValue2(data2)
             }}
-          />
+          /> */}
           {/* <Slider
             style={{ width: 200, height: 40 }}
             minimumValue={0}
