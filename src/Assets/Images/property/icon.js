@@ -56,7 +56,6 @@ import mobile from '../property/staticimg/svg/mobile.svg'
 import qr2 from '../property/staticimg/svg/qr2.svg'
 import share from '../property/staticimg/svg/share.svg'
 
-
 import Privacy from '../property/staticimg/svg/privacy.svg'
 import Terms from '../property/staticimg/svg/terms.svg'
 import Trash from '../property/staticimg/svg/trash.svg'
@@ -121,6 +120,33 @@ import eventtt from '../property/staticimg/svg/eventtt.svg'
 import payment from '../property/staticimg/svg/event.svg'
 import birth2 from '../property/staticimg/svg/birth2.svg'
 import suggestionicon from '../property/staticimg/svg/suggestionicon.svg'
+import dummyimg from '../property/staticimg/svg/dummyimg.svg'
+import promem1 from '../property/staticimg/svg/promem1.svg'
+import promem2 from '../property/staticimg/svg/promem2.svg'
+import promem3 from '../property/staticimg/svg/promem3.svg'
+import promem4 from '../property/staticimg/svg/promem4.svg'
+import addicon from '../property/staticimg/svg/addicon.svg'
+import addicon2 from '../property/staticimg/svg/addicon2.svg'
+import camera from '../property/staticimg/svg/camera.svg'
+import family from '../property/staticimg/svg/family.svg'
+import pencil from '../property/staticimg/svg/pencil.svg'
+import resident from '../property/staticimg/svg/resident.svg'
+import backf from '../property/staticimg/svg/backf.svg'
+import vistor1 from '../property/staticimg/svg/vistor1.svg'
+import vistor2 from '../property/staticimg/svg/vistor2.svg'
+import vistor3 from '../property/staticimg/svg/vistor3.svg'
+import vistor4 from '../property/staticimg/svg/vistor4.svg'
+import democar from '../property/staticimg/svg/democar.svg'
+import democard from '../property/staticimg/svg/democard.svg'
+import vih1 from '../property/staticimg/svg/vih1.svg'
+import vih2 from '../property/staticimg/svg/vih2.svg'
+import bulb2 from '../property/staticimg/svg/bulb2.svg'
+import ccpay from '../property/staticimg/svg/ccpay.svg'
+import drop2 from '../property/staticimg/svg/drop2.svg'
+import key2 from '../property/staticimg/svg/key2.svg'
+import recipt from '../property/staticimg/svg/recipt.svg'
+import document2 from '../property/staticimg/svg/document2.svg'
+
 
 export const Icons = {
   intro1: Intro1,
@@ -150,7 +176,7 @@ export const Icons = {
   Water: water,
   Electricity: electricity,
   Heart: heart,
-  
+
   Wifi: wifi,
   Phon: phon,
   Bank1: bank1,
@@ -180,7 +206,7 @@ export const Icons = {
   Mobile: mobile,
   Qr2: qr2,
   Share: share,
- 
+
   Privacy,
   Terms,
   Trash,
@@ -219,29 +245,54 @@ export const Icons = {
   burger: burger,
   swiper1: swiper1,
   swiper2: swiper2,
-  Client:client,
-  Plus:plus,
-  Located:located,
-  Date:date,
-  Occasion:occasion,
-  bulb:bulb,
-  key:key,
-  drop:drop,
-  right:right,
-  tax:tax,
-  true:trueicon,
-  evdetails:evdetails,
-  Event1:event1,
-  Event2:event2,
-  Event3:event3,
-  Event4:event4,
-  Event5:event5,
-  Event6:event6,
-  Threedot:threedot,
-  Bell:bell,
-  Birth:birth2,
-  Event:eventtt,
-  Payment:payment,
-  Suggestionicon:suggestionicon
-  
+  Client: client,
+  Plus: plus,
+  Located: located,
+  Date: date,
+  Occasion: occasion,
+  bulb: bulb,
+  key: key,
+  drop: drop,
+  right: right,
+  tax: tax,
+  true: trueicon,
+  evdetails: evdetails,
+  Event1: event1,
+  Event2: event2,
+  Event3: event3,
+  Event4: event4,
+  Event5: event5,
+  Event6: event6,
+  Threedot: threedot,
+  Bell: bell,
+  Birth: birth2,
+  Event: eventtt,
+  Payment: payment,
+  Suggestionicon: suggestionicon,
+  Dummyimg: dummyimg,
+  Promem1: promem1,
+  Promem2: promem2,
+  Promem3: promem3,
+  Promem4: promem4,
+  addicon:addicon,
+  addicon2:addicon2,
+  camera:camera,
+  family:family,
+  pencil:pencil,
+  resident:resident,
+  backf:backf,
+  vistor1:vistor1,
+  vistor2:vistor2,
+  vistor3:vistor3,
+  vistor4:vistor4,
+  democar:democar,
+  democard:democard,
+  vih1:vih1,
+  vih2:vih2,
+  document2:document2,
+  bulb2:bulb2,
+  ccpay:ccpay,
+  drop2:drop2,
+  key2:key2,
+  recipt:recipt
 }

@@ -20,16 +20,56 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   margin: {
-    marginTop: 50,
+    // marginTop: 10,
     marginBottom: 5,
   },
   listView: {
     flexDirection: 'row',
-
-    paddingHorizontal: 18,
+    // backgroundColor: 'red',
+    paddingHorizontal: 15,
+    paddingVertical: 12,
     alignItems: 'center',
+
     justifyContent: 'space-between',
   },
+  view1: {
+    color: 'white',
+    fontSize: 14,
+    fontFamily: 'Poppins',
+    fontWeight: '500',
+    fontFamily: 'Poppins',
+  },
+  bottomsec: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    justifyContent: 'space-between',
+    paddingVertical: 12,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+  },
+  bottomsectext: {
+    fontSize: 15,
+  },
+  bottomsectext2: {
+    color: '#BABABA',
+  },
+  iconview: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  iconviewmain: {
+    borderRadius: 9999,
+    width: 45,
+    height: 45,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#45A5B6',
+  },
+  iconviewtext: {
+    marginLeft: 5,
+    color: '#5FB118',
+  },
+
   listViewchild: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -41,6 +81,17 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontSize: 14,
     color: '#000000',
+  },
+  status: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: 100,
+    paddingVertical: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderTopRightRadius: 10,
+    borderBottomLeftRadius: 10,
   },
   pricetext: {
     color: '#349EB0',
@@ -57,22 +108,7 @@ const styles = StyleSheet.create({
     height: 22,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-
-  header: {
-    fontSize: 18,
-    fontWeight: '500',
-    marginTop: 25,
-    fontFamily: 'Poppins',
-  },
-  button: {
-    marginTop: 50,
-    alignItems: 'center',
-  },
-  selectall: {
-    fontSize: 18,
-    fontWeight: '500',
-    fontFamily: 'Poppins',
+    marginTop: 10,
   },
 })
 
@@ -90,15 +126,18 @@ const ProfileCard = styled(View)`
 
 const LisView = styled(TouchableOpacity)`
   /* width: 326px; */
-  height: 60px;
-  background: #ffffff;
+  /* height: 60px; */
+
+  background: #f4fbff;
   box-shadow: 0px 4px 4px rgba(247, 242, 242, 0.25);
   border-radius: 6px;
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  margin-right: 10;
+  margin-left: 10;
   border-width: 1;
-  border-color: #9d9d9d40;
+  border-color: #f4fbff;
 `
 
 export { Mainparent, styles, ProfileCard, LisView }

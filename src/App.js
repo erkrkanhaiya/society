@@ -54,9 +54,10 @@ import Eventdetails from './Screen/auth/eventdetails/eventdetails'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import { DrawerContent } from './Screen/DrawerScreen/Sidemenu'
 import Suggestion from './Screen/auth/suggestion/suggestion'
-import Payments from './Screen/auth/payments/payments'
+// import Payments from './Screen/auth/payments/payments'
 import Billpayment from './Screen/auth/billpayment/billpayment'
 import Profile from './Screen/auth/profile/Profile'
+import Createsuggestion from './Screen/auth/createsuggestion/createsuggestion'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -84,10 +85,11 @@ const App = () => {
         <Screen name="HomeDrawer" component={HomeDrawer} />
         <Screen name="Event" component={Event} />
         <Screen name="Eventdetails" component={Eventdetails} />
-        <Screen name="Suggestion" component={Suggestion} />
-        <Screen name="Payments" component={Payments} /> 
-        <Screen name="Billpayment" component={Billpayment} /> */}
+        <Screen name="Suggestion" component={Suggestion} /> */}
+        <Screen name="Billpayment" component={Billpayment} />
+        {/* <Screen name="Billpayment" component={Billpayment} /> */}
         {/* <Screen name="Profile" component={Profile} /> */}
+        {/* <Screen name="Createsuggestion" component={Createsuggestion} /> */}
       </Navigator>
     </NavigationContainer>
   )
@@ -113,6 +115,13 @@ const App = () => {
             {/* <Screen name="Forgotpassword" component={Forgotpassword} />      */}
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
+
+            {/* <Screen name="profile" component={Profile} /> */}
+            {/* <Screen name="Billpayment" component={Billpayment} /> */}
+            {/* <Screen name="Eventdetails" component={Eventdetails} /> */}
+            {/* <Screen name="_Notification" component={_Notification} /> */}
+            {/* <Screen name="Suggestion" component={Suggestion} /> */}
+            {/* <Screen name="Createsuggestion" component={Createsuggestion} /> */}
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>

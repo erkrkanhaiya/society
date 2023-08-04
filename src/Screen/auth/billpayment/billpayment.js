@@ -11,12 +11,10 @@ import { useState } from 'react'
 import Navigantion from '@/Components/common/navigation/navigantion'
 import { useNavigation, useTheme } from '@react-navigation/native'
 
-
 export default function Billpayment() {
   const [color, setColor] = useState(true) // default value of bg-color
   const [icon, setIcon] = useState(false)
   const nav = useNavigation()
-
 
   function Clicked() {
     setColor(!color)
@@ -27,24 +25,50 @@ export default function Billpayment() {
   }
   const listArr = [
     {
-      icon: 'bulb',
+      icon: 'bulb2',
       title: 'My Listing',
       price: '365',
+      badgecolor: '#5FB118',
+      status: 'Receipt',
+      statustext: 'PAID',
+      statusicon: 'recipt',
+      iconsize: '25',
     },
     {
-      icon: 'drop',
-      title: 'Request query',
+      icon: 'drop2',
+      title: 'My Listing',
       price: '365',
+      badgecolor: '#5FB118',
+      status: 'Pay Now',
+      statusicon: 'ccpay',
+      statustext: 'PENDING',
+
+      badgecolor: '#E3BD14',
+      iconsize: '22',
     },
     {
-      icon: 'key',
-      title: 'Pricing',
+      icon: 'key2',
+      title: 'My Listing',
       price: '365',
+      badgecolor: '#5FB118',
+      status: 'Pay Now',
+      statusicon: 'ccpay',
+      statustext: 'FAILED',
+
+      badgecolor: 'red',
+      iconsize: '28',
     },
     {
-      icon: 'tax',
-      title: 'Upgrade profile',
+      icon: 'document2',
+      title: 'My Listing',
       price: '365',
+      badgecolor: '#5FB118',
+      statustext: 'PAID',
+
+      status: 'Receipt',
+      statusicon: 'recipt',
+      badgecolor: '#5FB118',
+      iconsize: '22',
     },
   ]
 
@@ -60,10 +84,12 @@ export default function Billpayment() {
       >
         <View style={styles?.listView}>
           <View style={styles?.listViewchild}>
-            <SvgIcon name={item?.icon} size={'30'} />
+            <View style={styles?.iconviewmain}>
+              <SvgIcon name={item?.icon} size={item.iconsize} />
+            </View>
             <View
               style={{
-                marginLeft: 15,
+                marginLeft: 10,
               }}
             >
               <Text
@@ -74,13 +100,18 @@ export default function Billpayment() {
               <Text style={styles.pricetext}>Rs. {item?.price}/-</Text>
             </View>
           </View>
-          <View
-            style={[
-              styles.notification,
-              { backgroundColor: color ? '#EEEEEE' : '#45A5B6' },
-            ]}
-          >
-            {icon && <SvgIcon name={'true'} width={12} height={10} />}
+        </View>
+        <View style={[styles.status, { backgroundColor: item?.badgecolor }]}>
+          <Text style={styles.view1}>{item.statustext}</Text>
+        </View>
+        <View style={styles.bottomsec}>
+          <Text style={styles.bottomsectext}>
+            <Text style={styles.bottomsectext2}>Paid on</Text> 03 Jul, 05:50pm
+          </Text>
+          <View style={styles.iconview}>
+            <SvgIcon name={item?.statusicon} size={'18'} />
+
+            <Text style={styles.iconviewtext}>{item?.status}</Text>
           </View>
         </View>
       </LisView>
@@ -91,24 +122,13 @@ export default function Billpayment() {
     <View
       style={{ backgroundColor: Colors?.white, flex: 1, paddingHorizontal: 15 }}
     >
+      <Navigantion header={'Bill Payment'} {...nav} />
       <View>
-      <Navigantion header={'Bill Payment'} {...nav}/>
-
-        <Text style={styles.header}>All Payable bill</Text>
-        <View style={[styles?.listView, styles.margin]}>
-          <Text style={styles.selectall}>Select All</Text>
-          <View style={styles.notification}>
-            <SvgIcon name={'true'} width={12} height={10} />
-          </View>
-        </View>
         <FlatList
           data={listArr}
           renderItem={_renderItem}
           keyExtractor={(item, index) => item.key}
         />
-        <View style={styles.button}>
-          <Gbutton texttitle={'Pay Rs.160/-'} icon={true} />
-        </View>
       </View>
     </View>
   )

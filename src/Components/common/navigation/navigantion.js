@@ -2,16 +2,17 @@ import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import styled from 'styled-components'
 import { SvgIcon } from '@/Assets/Images/property'
-export default function Navigantion({ header, goBack }) {
+export default function Navigantion({ header, goBack,icon,color }) {
   return (
     <Main>
       <TouchableOpacity onPress={() => {goBack()}} style={{ height: 20, width: 20, justifyContent: 'center', alignItems: 'center' }}>
-        <SvgIcon name={'Back2'} width={'14px'} height={'14px'} />
+      {icon ? <SvgIcon name={'backf'} width={'24px'} height={'24px'}/>:<SvgIcon name={'Back2'} width={'14px'} height={'14px'}   />}
       </TouchableOpacity>
       <Text
         style={{
           fontSize: 20,
           fontFamily: 'Poppins',
+          color:color
         }}
       >
         {header}

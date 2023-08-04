@@ -39,7 +39,7 @@ export default function Signin() {
           <_Input
             value={mail}
             onChangeText={setMail}
-       
+       label={'ENTER YOUR EMAIL'}
           />
 
           <PasswordInput label={'Enter password'} />
