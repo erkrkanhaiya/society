@@ -51,12 +51,7 @@ const styles = StyleSheet.create({
     color: '#706E6E',
     fontFamily: 'Poppins-Regular',
   },
-  dscription: {
-    fontSize: 17,
-    fontWeight: '500',
-    marginTop: 12,
-    fontFamily: 'Poppins',
-  },
+ 
   dscription2: {
     fontSize: 14,
     lineHeight: 24,
@@ -90,7 +85,13 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     justifyContent:"space-between",
     marginTop:10
-  }
+  },
+  dscription: {
+    fontSize: 17,
+    fontWeight: '500',
+    marginTop: 12,
+    fontFamily: 'Poppins',
+  },
   /////
 })
 const Mainparent = styled(View)`

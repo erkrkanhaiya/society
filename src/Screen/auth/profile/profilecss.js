@@ -109,23 +109,6 @@ const Mainparent = styled(View)`
   flex: 1;
 `
 
-const ProfileCard = styled(View)`
-  /* width: 326px; */
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(186, 182, 182, 0.25);
-  flex: 2;
-  background-color: #349eb0;
-`
 
-const LisView = styled(TouchableOpacity)`
-  /* width: 326px; */
-  height: 50px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(247, 242, 242, 0.25);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-`
 
-export { Mainparent, styles, ProfileCard, LisView }
+export { Mainparent, styles, }

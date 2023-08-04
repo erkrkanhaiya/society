@@ -8,17 +8,18 @@ export default function _Input(props) {
   return (
     <Inputview>
       {/* <SvgIcon name={props.icon} size={16} /> */}
-      <TextInput
+      <TextInput  multiline={true} 
       theme={{
         colors: {
           background: 'white',
         },
       }}
         mode="outlined"
-        label={'ENTER EMAIL ID'}
-        style={{ flex: 1 }}
+        label={props.label}
+        style={{ flex: 1,height:props.height, }}
         onChangeText={onChangeText}
-        left={<TextInput.Icon icon="eye" />}
+        left={<TextInput.Icon icon="eye" /> }
+        
         value={text}
       />
     </Inputview>
