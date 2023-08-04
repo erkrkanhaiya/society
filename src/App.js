@@ -1,6 +1,3 @@
-
-
-
 import 'react-native-gesture-handler'
 import React from 'react'
 import { Provider } from 'react-redux'
@@ -54,51 +51,42 @@ import Event from './Screen/auth/event/event'
 // import Profile from './Screen/auth/profile/profile'
 // import Payment from './Screen/auth/payment/payment'
 import Eventdetails from './Screen/auth/eventdetails/eventdetails'
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createDrawerNavigator } from '@react-navigation/drawer'
 import { DrawerContent } from './Screen/DrawerScreen/Sidemenu'
 import Suggestion from './Screen/auth/suggestion/suggestion'
 import Payments from './Screen/auth/payments/payments'
 import Billpayment from './Screen/auth/billpayment/billpayment'
 import Profile from './Screen/auth/profile/Profile'
 
-
 const { Navigator, Screen } = createStackNavigator()
 
-const Drawer = createDrawerNavigator();
-
-
-
-
-
+const Drawer = createDrawerNavigator()
 
 const HomeDrawer = () => {
-
   return (
     <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
       <Drawer.Screen name="HomeDrawer" component={Homescreen} />
-      <Drawer.Screen name="Profile" component={Profile} />
+      {/* <Drawer.Screen name="Profile" component={Profile} /> */}
       {/* <Drawer.Screen name="Event" component={Event} /> */}
       {/* <Drawer.Screen name="Forgotpassword" component={Forgotpassword} /> */}
     </Drawer.Navigator>
   )
 }
 
-
-
 const App = () => {
   return (
     <NavigationContainer>
       <SafeAreaView />
       <Navigator screenOptions={{ headerShown: false }}>
-        <Screen name="Login" component={Login} />
+        {/* <Screen name="Login" component={Login} />
         <Screen name="newpass" component={Newpass} />
         <Screen name="Forgotpassword" component={Forgotpassword} />
         <Screen name="HomeDrawer" component={HomeDrawer} />
         <Screen name="Event" component={Event} />
         <Screen name="Eventdetails" component={Eventdetails} />
         <Screen name="Suggestion" component={Suggestion} />
-        <Screen name="Payments" component={Payments} />
-        <Screen name="Billpayment" component={Billpayment} />
+        <Screen name="Payments" component={Payments} /> 
+        <Screen name="Billpayment" component={Billpayment} /> */}
         {/* <Screen name="Profile" component={Profile} /> */}
       </Navigator>
     </NavigationContainer>
@@ -120,15 +108,11 @@ const App = () => {
         {/* <Homescreen /> */}
         <NavigationContainer>
           <Navigator screenOptions={{ headerShown: false }}>
-
             {/* <Screen name="Login" component={Login} />    */}
             {/* <Screen name="newpass" component={Newpass} />    */}
             {/* <Screen name="Forgotpassword" component={Forgotpassword} />      */}
             {/* <Screen name="Homescreen" component={Homescreen} /> */}
             {/* <Screen name="Event" component={Event} /> */}
-           
-            
-
           </Navigator>
         </NavigationContainer>
       </SafeAreaView>
