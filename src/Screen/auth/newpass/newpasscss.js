@@ -1,35 +1,23 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-
 import styled from 'styled-components'
 const styles = StyleSheet.create({
   view2: {
     flex: 1,
     backgroundColor: 'white',
-   
     justifyContent: 'center',
-   
   },
-  
   view1child: {
     justifyContent: 'flex-end',
     alignItems: 'center',
-
     flex: 0.5,
-  position:"relative",
-  paddingBottom:20
-
+    position: 'relative',
+    paddingBottom: 20,
   },
   textview: {
     flex: 0.75,
-   marginHorizontal:25,
-    marginTop:30
+    marginHorizontal: 25,
+    marginTop: 30,
   },
- 
-    // image: {
-    //   flex: 1,
-    //   justifyContent: 'center',
-    // },
-  
   textviewchild: {
     color: '#000000',
     fontFamily: 'Poppins-Regular',

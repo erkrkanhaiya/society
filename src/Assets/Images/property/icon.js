@@ -146,6 +146,12 @@ import drop2 from '../property/staticimg/svg/drop2.svg'
 import key2 from '../property/staticimg/svg/key2.svg'
 import recipt from '../property/staticimg/svg/recipt.svg'
 import document2 from '../property/staticimg/svg/document2.svg'
+import email from '../property/staticimg/svg/email.svg'
+import lock from '../property/staticimg/svg/lock.svg'
+import dob from '../property/staticimg/svg/dob.svg'
+import hat from '../property/staticimg/svg/hat.svg'
+import line from '../property/staticimg/svg/line.svg'
+import userd from '../property/staticimg/svg/userd.svg'
 
 
 export const Icons = {
@@ -294,5 +300,11 @@ export const Icons = {
   ccpay:ccpay,
   drop2:drop2,
   key2:key2,
-  recipt:recipt
+  recipt:recipt,
+  Email:email,
+  Lock:lock,
+dob:dob,
+hat:hat,
+line:line,
+userd:userd
 }

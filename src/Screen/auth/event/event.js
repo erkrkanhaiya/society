@@ -26,11 +26,8 @@ import { Colors } from '@/Theme/Variables'
 import Navigantion from '@/Components/common/navigation/navigantion'
 import { useNavigation, useTheme } from '@react-navigation/native'
 
-
-
-
 export default function Event() {
-const nav = useNavigation()
+  const nav = useNavigation()
 
   const card_data = [
     {
@@ -58,32 +55,14 @@ const nav = useNavigation()
 
   function _renderItem({ item, index }) {
     return (
-      <TouchableOpacity onPress={()=>nav.navigate('Eventdetails')}
-      style={styles.cardview}>
+      <TouchableOpacity
+        onPress={() => nav.navigate('Eventdetails')}
+        style={styles.cardview}
+      >
         <View>
           <Image source={item.image} style={{ height: 127, width: 140 }} />
-          <View
-            style={{
-              backgroundColor: 'white',
-              position: 'absolute',
-              padding: 5,
-              paddingHorizontal: 20,
-              top: 10,
-              left: -25,
-
-              // overflow: 'hidden',
-              transform: [{ rotate: '-50deg' }],
-            }}
-          >
-            <Text
-              style={{
-                fontSize: 12,
-                textAlign: 'center',
-                fontWeight: '600',
-              }}
-            >
-              By User
-            </Text>
+          <View style={styles.badge}>
+            <Text style={styles.badgesize}>By User</Text>
           </View>
         </View>
 
@@ -108,7 +87,7 @@ const nav = useNavigation()
 
   return (
     <View style={{ backgroundColor: Colors?.white, paddingHorizontal: 15 }}>
-      <Navigantion header={'Event'}  {...nav}/>
+      <Navigantion header={'Event'} {...nav} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <SafeAreaView>
           <View>
@@ -142,15 +121,17 @@ const nav = useNavigation()
                 </View>
                 <Text style={styles.containertext}>Upcoming events</Text>
               </View>
+            </View>
+            <View style={styles.addicon}>
+              <FlatList
+                data={card_data}
+                renderItem={_renderItem}
+                keyExtractor={(item, index) => item.key}
+              />
               <View style={styles.addview}>
                 <SvgIcon name={'Plus'} size="20px" />
               </View>
             </View>
-            <FlatList
-              data={card_data}
-              renderItem={_renderItem}
-              keyExtractor={(item, index) => item.key}
-            />
           </View>
         </SafeAreaView>
       </ScrollView>

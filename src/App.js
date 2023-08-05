@@ -58,6 +58,7 @@ import Suggestion from './Screen/auth/suggestion/suggestion'
 import Billpayment from './Screen/auth/billpayment/billpayment'
 import Profile from './Screen/auth/profile/Profile'
 import Createsuggestion from './Screen/auth/createsuggestion/createsuggestion'
+import Addmember from './Screen/auth/addmember/addmeber'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -85,8 +86,9 @@ const App = () => {
         <Screen name="HomeDrawer" component={HomeDrawer} />
         <Screen name="Event" component={Event} />
         <Screen name="Eventdetails" component={Eventdetails} />
-        <Screen name="Suggestion" component={Suggestion} /> */}
-        <Screen name="Billpayment" component={Billpayment} />
+        <Screen name="Suggestion" component={Suggestion} />
+        <Screen name="Billpayment" component={Billpayment} /> */}
+        <Screen name="Addmember" component={Addmember} />
         {/* <Screen name="Billpayment" component={Billpayment} /> */}
         {/* <Screen name="Profile" component={Profile} /> */}
         {/* <Screen name="Createsuggestion" component={Createsuggestion} /> */}

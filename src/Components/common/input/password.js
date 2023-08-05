@@ -9,6 +9,9 @@ export default function PasswordInput(props) {
   const [Password, onChangePassword] = React.useState('')
   const [hidePass, setHidePass] = useState(true)
   const [text, onChangeText] = React.useState('')
+  const icon = () => {
+    return <SvgIcon name={props.icon} size={props.size} />
+  }
   // console.log('first')
   return (
     <Inputview>
@@ -22,7 +25,7 @@ export default function PasswordInput(props) {
         mode="outlined"
         label={props.label}
         style={{ flex: 1 }}
-        left={<TextInput.Icon icon="eye" />}
+        left={<TextInput.Icon name={icon} />}
         onChangeText={onChangePassword}
         placeholder={props.placeholder}
         value={Password}

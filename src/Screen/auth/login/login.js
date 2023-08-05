@@ -29,20 +29,22 @@ export default function Signin() {
   return (
     <Mainparent>
       <View onc style={styles.view2}>
-      <View style={styles.view1child}>
+        <View style={styles.view1child}>
           <SvgIcon name={'loginimg'} width={'210'} height={'160'} />
         </View>
         <SafeAreaView style={styles.textview}>
-        <Text style={styles.textviewchild}>Login</Text>
+          <Text style={styles.textviewchild}>Login</Text>
           <Text style={styles.textviewchild2}>Login to Continue!</Text>
-       
+
           <_Input
             value={mail}
             onChangeText={setMail}
-       label={'ENTER YOUR EMAIL'}
+            label={'ENTER YOUR EMAIL'}
+            icon={'Email'}
+            size={16}
           />
 
-          <PasswordInput label={'Enter password'} />
+          <PasswordInput label={'Enter password'} icon={'Lock'} size={20}/>
 
           <TouchableOpacity
             onPress={() => {
@@ -50,12 +52,14 @@ export default function Signin() {
             }}
           ></TouchableOpacity>
 
-        
           <Text style={styles.sidebutton2}>Forgot Password?</Text>
           <View style={styles.button}>
-            <Gbutton texttitle={'Login'} onClick={()=>{
-               nav.navigate('HomeDrawer')
-            }} />
+            <Gbutton
+              texttitle={'Login'}
+              onClick={() => {
+                nav.navigate('HomeDrawer')
+              }}
+            />
           </View>
         </SafeAreaView>
       </View>

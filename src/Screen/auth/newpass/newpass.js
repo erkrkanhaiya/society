@@ -14,19 +14,11 @@ import { SvgIcon, newlogin } from '@/Assets/Images/property'
 import _Input from '@/Components/common/input/reusableinput'
 import PasswordInput from '@/Components/common/input/password'
 import { useNavigation, useTheme } from '@react-navigation/native'
-// import { newlogin } from '@/Assets/Images/property'
-const image = newlogin.home1
+
 export default function Newpass() {
   const [mail, setMail] = useState('')
   const [password, setPassword] = useState('')
-  // const [mailErr, setmailErr] = useState(false)
 
-  // function userhandler(e) {
-  //   let item = e.target.value
-  //   if (item.length < 3) {
-  //     setmailErr(true)
-  //   }
-  // }
   const nav = useNavigation()
   return (
     <Mainparent>
@@ -51,9 +43,15 @@ export default function Newpass() {
           <Text style={styles.textviewchild}>New password</Text>
           <Text style={styles.textviewchild2}>Enter your new password</Text>
 
-          <_Input value={mail} onChangeText={setMail} />
+          <_Input
+            value={mail}
+            onChangeText={setMail}
+            label={'Enter Email id'}
+            icon={'Email'}
+            size={17}
+          />
 
-          <PasswordInput label={'Confirm password'} />
+          <PasswordInput label={'Confirm password'} icon={'Lock'} size={20} />
 
           <TouchableOpacity
             onPress={() => {

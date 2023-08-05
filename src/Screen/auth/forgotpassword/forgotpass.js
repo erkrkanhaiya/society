@@ -17,14 +17,7 @@ import { useNavigation, useTheme } from '@react-navigation/native'
 export default function Signin() {
   const [mail, setMail] = useState('')
   const [password, setPassword] = useState('')
-  // const [mailErr, setmailErr] = useState(false)
-
-  // function userhandler(e) {
-  //   let item = e.target.value
-  //   if (item.length < 3) {
-  //     setmailErr(true)
-  //   }
-  // }
+  
   const nav = useNavigation()
   return (
     <Mainparent>
@@ -41,7 +34,9 @@ export default function Signin() {
           <_Input
             value={mail}
             onChangeText={setMail}
-           
+            icon={'Email'} size={20}
+            label={'ENTER EMAIL ID'}
+
           />
 
           <View style={styles.button}>

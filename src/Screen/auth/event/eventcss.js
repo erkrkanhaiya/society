@@ -25,7 +25,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 45,
   },
-
+  addicon: {
+    // backgroundColor:"red"
+  },
   icon3: {
     backgroundColor: 'white',
     width: 40,
@@ -66,15 +68,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#349EB0',
     borderRadius: 9999,
+    position: 'absolute',
+    bottom: -15,
+    right: 0,
+  },
+  badge:{
+    backgroundColor: 'white',
+    position: 'absolute',
+    padding: 5,
+    paddingHorizontal: 10,
+    top: 15,
+  },
+  badgesize:{
+    fontSize: 12,
+    textAlign: 'center',
+    fontWeight: '600',
   },
   cardview: {
     borderWidth: 2,
     borderColor: '#9D9D9D40',
     borderRadius: 12,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginVertical: 5,
-    padding: 5,
+    padding: 8,
     justifyContent: 'space-around',
   },
   cardtext: {
